@@ -23,7 +23,21 @@ body {
 }
 
 .header {
+  max-width: 50%;
+}
 
+h1 {
+  font-size: 8em;
+  line-height: .8em;
+  text-shadow: rgba(0, 0, 0, .1) 3px 3px 5px;
+  -webkit-margin-after: 0px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  line-height: .2em;
+  text-shadow: rgba(0, 0, 0, .2) 1px 1px 3px;
 }
 
 @-webkit-keyframes AnimationName {
