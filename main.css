@@ -26,8 +26,18 @@ body {
   max-width: 50%;
 }
 
-.turd {
+.icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.icons svg {
   fill: #fff;
+  -webkit-filter: drop-shadow( 3px 3px 5px rgba(0,0,0,.1) );
+  filter: drop-shadow( 3px 3px 5px rgba(0,0,0,.1) );
+  margin: 10px;
+  width: 60px;
 }
 
 h1 {
@@ -35,6 +45,7 @@ h1 {
   line-height: .8em;
   text-shadow: rgba(0, 0, 0, .1) 3px 3px 5px;
   -webkit-margin-after: 0px;
+  -webkit-margin-before: 0px;
 }
 
 h2 {
