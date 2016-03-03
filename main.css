@@ -40,6 +40,12 @@ body {
   width: 60px;
 }
 
+.icons svg:hover {
+  -ms-transform: translate(0px, -10px); /* IE 9 */
+  -webkit-transform: translate(0px, -10px); /* Safari */
+  transform: translate(0px, -10px);
+}
+
 h1 {
   font-size: 8em;
   line-height: .8em;
@@ -56,17 +62,17 @@ h2 {
 }
 
 @-webkit-keyframes gradientShift {
-    0%{background-position:24% 0%}
-    50%{background-position:77% 100%}
-    100%{background-position:24% 0%}
+  0%{background-position:24% 0%}
+  50%{background-position:77% 100%}
+  100%{background-position:24% 0%}
 }
 @-moz-keyframes gradientShift {
-    0%{background-position:24% 0%}
-    50%{background-position:77% 100%}
-    100%{background-position:24% 0%}
+  0%{background-position:24% 0%}
+  50%{background-position:77% 100%}
+  100%{background-position:24% 0%}
 }
 @keyframes gradientShift { 
-    0%{background-position:24% 0%}
-    50%{background-position:77% 100%}
-    100%{background-position:24% 0%}
+  0%{background-position:24% 0%}
+  50%{background-position:77% 100%}
+  100%{background-position:24% 0%}
 }
