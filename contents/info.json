@@ -1,0 +1,28 @@
+{
+  'data': {
+    'job-title': 'Software Engineer & Developer Evnagelist',
+    'company': 'Clarifai',
+    'past': [
+      'fulltime': [
+        'Venmo'
+      ],
+      'intern': [
+        'Intuit',
+        'Microsoft',
+        'The National Center for Women & IT',
+        'General Mills',
+        'Priority 5'
+      ]
+    ],
+    'hobbies': [
+      'playing guitar',
+      'singing karaoke',
+      'lip sync battles',
+      'playing Mario Kart',
+      'playing Minecraft',
+      'coding',
+      'blogging',
+      'drawing & doodling'
+    ]
+  }
+}
