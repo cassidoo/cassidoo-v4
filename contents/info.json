@@ -1,28 +1,28 @@
 {
-  'data': {
-    'job-title': 'Software Engineer & Developer Evnagelist',
-    'company': 'Clarifai',
-    'past': [
-      'fulltime': [
-        'Venmo'
+  "data": {
+    "job-title": "Software Engineer & Developer Evangelist",
+    "company": "Clarifai",
+    "past": {
+      "fulltime": [
+        "Venmo"
       ],
-      'intern': [
-        'Intuit',
-        'Microsoft',
-        'The National Center for Women & IT',
-        'General Mills',
-        'Priority 5'
+      "intern": [
+        "Intuit",
+        "Microsoft",
+        "The National Center for Women & IT",
+        "General Mills",
+        "Priority 5"
       ]
-    ],
-    'hobbies': [
-      'playing guitar',
-      'singing karaoke',
-      'lip sync battles',
-      'playing Mario Kart',
-      'playing Minecraft',
-      'coding',
-      'blogging',
-      'drawing & doodling'
+    },
+    "hobbies": [
+      "playing guitar",
+      "singing karaoke",
+      "lip sync battles",
+      "playing Mario Kart",
+      "playing Minecraft",
+      "coding",
+      "blogging",
+      "drawing & doodling"
     ]
   }
 }
