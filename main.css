@@ -44,6 +44,8 @@ body {
   -ms-transform: translate(0px, -10px); /* IE 9 */
   -webkit-transform: translate(0px, -10px); /* Safari */
   transform: translate(0px, -10px);
+  -webkit-transition: transform .5s; /* Safari */
+  transition: transform .5s;
 }
 
 h1 {

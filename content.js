@@ -20,3 +20,15 @@ function pullPress() {
     console.log(j);
   });
 }
+
+function parseInfo() {
+
+}
+k
+function parsePress() {
+
+}
+
+function greeting() {
+  // TODO: template literals?
+}
