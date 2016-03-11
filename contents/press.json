@@ -1,5 +1,5 @@
 {
-  "data": {
+  "data": [
     {
       "url": "http://www.geekwire.com/2015/dubhacks-remote-cat-feeders-disease-detectors-and-other-inventions-at-this-caffeine-fueled-24-hour-university-hackathon/",
       "title": "DubHacks: Remote cat feeders, disease detectors and other inventions at this 24-hour caffeine-fueled university hackathon"
@@ -264,5 +264,5 @@
       "url": "http://research.microsoft.com/apps/video/default.aspx?id=179475",
       "title": "Get Inspired by Aspiration Award Winners"
     }
-  }
+  ]
 }
