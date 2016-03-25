@@ -1,9 +1,9 @@
 {
   "data": {
     "title": "Software Engineer & Developer Evangelist",
-    "company": "Clarifai",
-    "past": {
+    "companies": {
       "fulltime": [
+        "Clarifai",
         "Venmo"
       ],
       "intern": [
