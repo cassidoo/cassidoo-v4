@@ -36,11 +36,24 @@ function pressVars() {
   });
 }
 
+function formListString(arr) {
+  if (arr.length > 1) {
+    return arr.slice(0, -2).join(', ') + ', and ' + arr.slice(-1);
+  } else {
+    return arr;
+  }
+
+}
+
 function intro(info) {
   var content = document.getElementById('content');
+  var fulltime = formListString(info.fulltime);
+  var intern = formListString(info.intern);
+
   content.innerHTML = html(`
     <div class="intro">
-        Hi, My name is Cassidy Williams and I am a ${info.title}.
+      Hi, My name is Cassidy Williams and I am a ${info.title} at ${info.company}.
+      Previously, I was at ${fulltime}, and I interned at ${intern}.
     </div>
   `);
 }
