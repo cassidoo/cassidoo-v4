@@ -48,6 +48,10 @@ body {
   transition: transform .5s;
 }
 
+#content {
+  white-space: pre-wrap;
+}
+
 h1 {
   font-size: 8em;
   line-height: .8em;
