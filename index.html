@@ -2,14 +2,16 @@
   <head>
     <title>Cassidy Williams</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:800,400" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <script type='text/javascript' src='js/content.compiled.js'></script>
+    <script type='text/javascript' src='js/popup.js'></script>
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <div class="header" id="blur">
         <h1>Cassidy Williams</h1>
-        <h2>Software Engineer & Developer Evangelist</h2>
+        <h2>Software Engineer &amp; Developer Evangelist</h2>
         <div class="icons">
           <a href="http://github.com/cassidoo">
             <svg viewBox="0 0 32 32"><use xlink:href="icons.svg#github"></svg>
@@ -29,7 +31,7 @@
           <a href="mailto:cassidy@cassidoo.co">
             <svg viewBox="0 0 8 8"><use xlink:href="icons.svg#email"></svg>
           </a>
-          <svg viewBox="0 0 8 8"><use xlink:href="icons.svg#ellipses"></svg>
+          <svg onclick="popupToggle()" viewBox="0 0 8 8"><use xlink:href="icons.svg#ellipses"></svg>
         </div>
       </div>
       <div id="content">

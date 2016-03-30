@@ -6,9 +6,25 @@ html, body {
 
 body {
   color: #fff;
-  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
 }
 
+h1 {
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+  font-size: 8em;
+  font-weight: 800;
+  line-height: .8em;
+  text-shadow: rgba(0, 0, 0, .1) 3px 3px 5px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-before: 0px;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: .2em;
+  text-shadow: rgba(0, 0, 0, .2) 1px 1px 3px;
+}
 .container {
   background: linear-gradient(316deg, #ffdf79, #e371d4, #9771e3);
   background-size: 600% 600%;
@@ -50,21 +66,6 @@ body {
 
 #content {
   white-space: pre-wrap;
-}
-
-h1 {
-  font-size: 8em;
-  line-height: .8em;
-  text-shadow: rgba(0, 0, 0, .1) 3px 3px 5px;
-  -webkit-margin-after: 0px;
-  -webkit-margin-before: 0px;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 1.8em;
-  line-height: .2em;
-  text-shadow: rgba(0, 0, 0, .2) 1px 1px 3px;
 }
 
 @-webkit-keyframes gradientShift {
