@@ -1,0 +1,23 @@
+.blur#content {
+  display: block;
+  white-space: pre-wrap;
+  z-index: 100;
+}
+
+.blur.header {
+  z-index: 0;
+}
+
+.blur h1, .blur h2 {
+  color: transparent;
+  text-shadow: 0 0 40px rgba(255,255,255,.4);
+}
+
+.blur .icons svg {
+  fill: rgba(255,255,255,.5);
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  filter: blur(20px);
+  margin: 10px;
+  width: 60px;
+}

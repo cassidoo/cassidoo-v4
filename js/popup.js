@@ -1,4 +1,6 @@
 function popupToggle() {
-  document.getElementById('blur').classList.toggle('blur');
-  document.getElementById('blur').classList.toggle('noblur');
+  [].forEach.call(document.getElementsByClassName('toggle'), function(x) {
+    x.classList.toggle('blur');
+  });
+  infoVars();
 }
