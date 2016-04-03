@@ -1,16 +1,39 @@
-.blur#content {
-  display: block;
+.blur #content {
+  opacity: 1;
+  visibility: visible;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 300;
+  text-align: justify;
+  transform: translate(-50%, -50%);
   white-space: pre-wrap;
   z-index: 100;
+
+  transition: opacity 3s;
 }
 
-.blur.header {
+.blur #content .close {
+  text-align: center;
+  width: 100%;
+}
+
+.blur #content svg {
+  fill: #fff;
+  width: 60px;
+}
+
+.blur .header {
   z-index: 0;
 }
 
 .blur h1, .blur h2 {
   color: transparent;
   text-shadow: 0 0 40px rgba(255,255,255,.4);
+
+  transition: text-shadow 1s;
+  transition: color 1s;
 }
 
 .blur .icons svg {
@@ -20,4 +43,6 @@
   filter: blur(20px);
   margin: 10px;
   width: 60px;
+
+  transition: filter 1s;
 }
