@@ -70,10 +70,10 @@ h1, h2 {
   transition: transform .5s;
 }
 
-#content {
+.content {
+  display: none;
   max-width: 600px;
   opacity: 0;
-  visibility: hidden;
 }
 
 @-webkit-keyframes gradientShift {

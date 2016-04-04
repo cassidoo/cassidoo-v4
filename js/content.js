@@ -53,7 +53,7 @@ function intro(info) {
   var fulltime = formListString(info.fulltime);
   var intern = formListString(info.intern);
 
-  content.innerHTML += `Hi, my name is Cassidy Williams (if you couldn't figure that out already) and I am a ${info.title} at ${info.company}!
+  content.innerHTML = `Hi, my name is Cassidy Williams (if you couldn't figure that out already) and I am a ${info.title} at ${info.company}!
 
       I started my voyage into coding when I was an 8th grader in the suburbs of Chicago, and I've been loving it ever since. I'm primarily interested in front-end development, but hey, it's always fun to try other things too. You can see my projects on my <a href="http://github.com/cassidoo">GitHub profile</a>.
 

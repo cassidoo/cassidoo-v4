@@ -1,6 +1,6 @@
-.blur #content {
+.blur .content {
   opacity: 1;
-  visibility: visible;
+  display: block;
 
   position: absolute;
   top: 50%;
@@ -14,12 +14,12 @@
   transition: opacity 3s;
 }
 
-.blur #content .close {
+.blur .content .close {
   text-align: center;
   width: 100%;
 }
 
-.blur #content svg {
+.blur .content svg {
   fill: #fff;
   width: 60px;
 }
