@@ -5,13 +5,6 @@ function pullInfo() {
   });
 }
 
-// pull press links
-function pullPress() {
-  fetch('contents/press.json').then(function(response) {
-    return response.json();
-  });
-}
-
 // get variable values for About section
 function infoVars() {
   var info = {};
@@ -32,10 +25,27 @@ function infoVars() {
   });
 }
 
+// pull press links
+function pullPress() {
+  console.log('poop');
+  fetch('contents/press.json').then(function(response) {
+    return response.json();
+  });
+}
+
+
 // first 5 press articles
 function pressVars() {
   var recent = [];
+
   pullPress().then(function(r) {
+    for(var i = 0; i < 5; i++) {
+      recent[i] = r.data[i];
+    }
+    console.log(recent);
+  })
+  .then(function() {
+    press(recent);
   });
 }
 
@@ -47,7 +57,7 @@ function formListString(arr) {
   }
 }
 
-//generate info section
+// generate info section
 function intro(info) {
   var content = document.getElementById('content');
   var fulltime = formListString(info.fulltime);
@@ -68,3 +78,6 @@ function intro(info) {
   `;
 }
 
+function press(articles) {
+  console.log(articles);
+}

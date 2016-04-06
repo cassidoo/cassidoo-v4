@@ -73,7 +73,10 @@ h1, h2 {
 .content {
   display: none;
   max-width: 600px;
-  opacity: 0;
+
+  -webkit-animation: fadeOutFromBlock 1s ease-out;
+  -moz-animation: fadeOutFromBlock 1s ease-out;
+  animation: fadeOutFromBlock 1s ease-out;
 }
 
 @-webkit-keyframes gradientShift {
@@ -90,4 +93,22 @@ h1, h2 {
   0%{background-position:24% 0%}
   50%{background-position:77% 100%}
   100%{background-position:24% 0%}
+}
+
+@-webkit-keyframes fadeOutFromBlock {
+  0% {display: block; opacity: 1;}
+  99% {display: block; opacity: 0;}
+  100% {display: none; opacity: 0;}
+}
+
+@-moz-keyframes fadeOutFromBlock {
+  0% {display: block; opacity: 1;}
+  99% {display: block; opacity: 0;}
+  100% {display: none; opacity: 0;}
+}
+
+@keyframes fadeOutFromBlock {
+  0% {display: block; opacity: 1;}
+  99% {display: block; opacity: 0;}
+  100% {display: none; opacity: 0;}
 }

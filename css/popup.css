@@ -1,7 +1,5 @@
 .blur .content {
-  opacity: 1;
   display: block;
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,7 +9,9 @@
   white-space: pre-wrap;
   z-index: 100;
 
-  transition: opacity 3s;
+  -webkit-animation: fadeInFromNone 1s ease-out;
+  -moz-animation: fadeInFromNone 1s ease-out;
+  animation: fadeInFromNone 1s ease-out;
 }
 
 .blur .content .close {
@@ -32,8 +32,8 @@
   color: transparent;
   text-shadow: 0 0 40px rgba(255,255,255,.4);
 
-  transition: text-shadow 1s;
-  transition: color 1s;
+  transition: text-shadow .5s;
+  transition: color .5s;
 }
 
 .blur .icons svg {
@@ -44,5 +44,23 @@
   margin: 10px;
   width: 60px;
 
-  transition: filter 1s;
+  transition: filter .5s;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {display: none; opacity: 0;}
+  1% {display: block; opacity: 0;}
+  100% {display: block;opacity: 1;}
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {display: none; opacity: 0;}
+  1% {display: block; opacity: 0;}
+  100% {display: block;opacity: 1;}
+}
+
+@keyframes fadeInFromNone {
+  0% {display: none; opacity: 0;}
+  1% {display: block; opacity: 0;}
+  100% {display: block;opacity: 1;}
 }
