@@ -27,12 +27,10 @@ function infoVars() {
 
 // pull press links
 function pullPress() {
-  console.log('poop');
-  fetch('contents/press.json').then(function(response) {
+  return fetch('contents/press.json').then(function(response) {
     return response.json();
   });
 }
-
 
 // first 5 press articles
 function pressVars() {
@@ -42,7 +40,6 @@ function pressVars() {
     for(var i = 0; i < 5; i++) {
       recent[i] = r.data[i];
     }
-    console.log(recent);
   })
   .then(function() {
     press(recent);
@@ -79,5 +76,8 @@ function intro(info) {
 }
 
 function press(articles) {
+  var press = document.getElementById('press');
   console.log(articles);
+
+  press.innerHTML = ``;
 }
