@@ -23,14 +23,26 @@
   height: 60px;
 }
 
+.blur .content svg {
+  fill: #fff;
+  width: 60px;
+}
+
+.blur .content svg:hover {
+  cursor: pointer;
+
+  -webkit-animation: spin .5s ease-in;
+  -moz-animation: spin .5s ease-in;
+  animation: spin .5s ease-in;
+}
+
 .blur .content .about {
   height: 70%;
   overflow-y: auto;
 }
 
-.blur .content svg {
-  fill: #fff;
-  width: 60px;
+.blur .content .about:hover {
+  cursor: ns-resize;
 }
 
 .blur .header {
@@ -56,20 +68,50 @@
   transition: filter .5s;
 }
 
+@-moz-keyframes spin {
+  100% {-moz-transform: rotate(180deg); transform:rotate(180deg);}
+}
+@-webkit-keyframes spin {
+  100% {-webkit-transform: rotate(180deg); transform:rotate(180deg);}
+}
+@keyframes spin {
+  100% {transform:rotate(180deg);}
+}
+
 @-webkit-keyframes fadeInFromNone {
   0% {display: none; opacity: 0;}
   1% {display: block; opacity: 0;}
   100% {display: block;opacity: 1;}
 }
-
 @-moz-keyframes fadeInFromNone {
   0% {display: none; opacity: 0;}
   1% {display: block; opacity: 0;}
   100% {display: block;opacity: 1;}
 }
-
 @keyframes fadeInFromNone {
   0% {display: none; opacity: 0;}
   1% {display: block; opacity: 0;}
   100% {display: block;opacity: 1;}
 }
+
+/*
+-webkit-animation: fadeOutFromBlock 1s ease-out;
+-moz-animation: fadeOutFromBlock 1s ease-out;
+animation: fadeOutFromBlock 1s ease-out;
+
+@-webkit-keyframes fadeOutFromBlock {
+  0% {display: block; opacity: 1;}
+  99% {display: block; opacity: 0;}
+  100% {display: none; opacity: 0;}
+}
+@-moz-keyframes fadeOutFromBlock {
+  0% {display: block; opacity: 1;}
+  99% {display: block; opacity: 0;}
+  100% {display: none; opacity: 0;}
+}
+@keyframes fadeOutFromBlock {
+  0% {display: block; opacity: 1;}
+  99% {display: block; opacity: 0;}
+  100% {display: none; opacity: 0;}
+}
+*/
