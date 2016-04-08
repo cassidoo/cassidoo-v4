@@ -7,6 +7,7 @@ html, body {
 body {
   color: #fff;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  overflow: hidden;
 }
 
 h1 {
@@ -26,6 +27,10 @@ h2 {
 
 h1, h2 {
   text-shadow: rgba(0, 0, 0, .2) 0px 2px 3px;
+}
+
+a {
+  color: white;
 }
 
 .container {

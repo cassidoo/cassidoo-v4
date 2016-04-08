@@ -77,7 +77,15 @@ function intro(info) {
 // generate press section
 function press(articles) {
   var press = document.getElementById('press');
+  press.innerHTML = `<div>Recent news with me:</div><ul>`;
   articles.forEach(function(x) {
-    press.innerHTML += `<a href="${x.url}">${x.title}</a>`;
+    press.innerHTML += `<li><a href="${x.url}">${x.title}</a></li>`;
   });
+  press.innerHTML += `</ul>`;
+}
+
+// generate all content
+function generateContent() {
+  infoVars();
+  pressVars();
 }
