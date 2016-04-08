@@ -109,6 +109,9 @@ a:hover {
     font-size: 1em;
     margin: 15px 0;
   }
+  a {
+    text-decoration: none;
+  }
   .container {
     padding: 20px;
     text-align: center;
