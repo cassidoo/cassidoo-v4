@@ -68,16 +68,16 @@ function intro(info) {
 
       Previously, I was at ${fulltime}, and before that, I graduated from ${info.school} in ${info.grad} with my degree in ${info.major}. While there, I interned at ${intern}. Since moving to NYC, I've had the honor of working with various organizations, such as <a href="http://hacker.fund/">Hacker Fund</a> as their Director of Outreach, and I've been included as one of <a href="http://www.glamour.com/inspired/2014/09/top-new-women-leaders-in-technology/33">Glamour Magazine's 35 Women Under 35 Who Are Changing the Tech Industry</a> and <a href="https://lists.linkedin.com/2015/next-wave/enterprise-tech/cassidy-williams">LinkedIn's top 10 Professionals 35 & Under in Enterprise Tech</a>. I've also had the pleasure of working with Microsoft on the <a href="http://www.bigdreammovement.com/">Big Dream documentary</a> and the U.S.A. Science and Engineering Festival with their <a href="http://scienceblogs.com/usasciencefestival/2014/09/24/cassidy-williams-an-emerging-computer-scientist-with-a-desire-to-inspire-more-women-in-stem/">Nifty Fifty program</a> to encourage more students to participate in STEM.
 
-      One of my favorite things to do is help people be successful, whether it means mentoring them at a hackathon, editing their resume, or giving a talk. Check out my <a href="http://github.com/cassidoo/getting-a-gig">Getting a Gig</a> guide or my <a href="http://cassidoo.github.io">blog</a> to learn more about that. If you want. You don't have to. I'm not your mother.
+      In addition to ${info.hobbies[Math.floor(Math.random()*info.hobbies.length)]}, one of my favorite things to do is help people be successful, whether it means mentoring them at a hackathon, editing their resume, or giving a talk. Check out my <a href="http://github.com/cassidoo/getting-a-gig">Getting a Gig</a> guide or my <a href="http://cassidoo.github.io">blog</a> to learn more about that. If you want. You don't have to. I'm not your mother.
 
       If you have any questions about me or you just want to send me a joke, take a look at any of my profiles listed on this site.
-      Thanks for reading this far. In exchange for your seemingly undying loyalty, here is a joke: Why are mountains so funny? Because they're hill areas.
-  `;
+      Thanks for reading this far. In exchange for your seemingly undying loyalty, here is a joke: Why are mountains so funny? Because they're hill areas.`;
 }
 
+// generate press section
 function press(articles) {
   var press = document.getElementById('press');
-  console.log(articles);
-
-  press.innerHTML = ``;
+  articles.forEach(function(x) {
+    press.innerHTML += `<a href="${x.url}">${x.title}</a>`;
+  });
 }
