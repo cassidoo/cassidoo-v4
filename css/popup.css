@@ -38,6 +38,7 @@
 
 .blur .content .about {
   height: 70%;
+  padding: 0 15px 0 0;
   overflow-y: auto;
 }
 
@@ -68,6 +69,28 @@
   transition: filter .5s;
 }
 
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(62,31,125,0);
+  -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar:hover {
+  background-color: rgba(0,0,0,0.09);
+}
+::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(316deg, rgba(62,31,125,.2), rgba(0,0,0,.2));
+  -webkit-border-radius: 100px;
+  background-clip: padding-box;
+  border: 2px solid rgba(0,0,0,0);
+  min-height: 10px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(62,31,125,0.3);
+  -webkit-border-radius: 100px;
+}
+
+/* animations */
 @-moz-keyframes spin {
   100% {-moz-transform: rotate(180deg); transform:rotate(180deg);}
 }

@@ -133,6 +133,7 @@ a:hover {
   }
 }
 
+/* animations */
 @-webkit-keyframes gradientShift {
   0%{background-position:24% 0;}
   50%{background-position:77% 100%;}
