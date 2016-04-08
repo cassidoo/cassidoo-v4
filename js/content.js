@@ -1,6 +1,18 @@
+function buildHeader() {
+  var head = new Headers();
+  head.append('pragma', 'no-cache');
+  head.append('cache-control', 'no-cache');
+
+  var init = {
+    method: 'GET',
+    headers: head,
+  };
+  return init;
+}
+
 // pull infomation about me
 function pullInfo() {
-  return fetch('contents/info.json').then(function(response) {
+  return fetch('contents/info.json', buildHeader()).then(function(response) {
     return response.json();
   });
 }
@@ -15,6 +27,7 @@ function infoVars() {
     info.company = x.companies.fulltime[0];
     info.fulltime = x.companies.fulltime.slice(1);
     info.intern = x.companies.intern;
+    info.city = x.city;
     info.school = x.school;
     info.grad = x.grad;
     info.major = x.major;
@@ -27,7 +40,7 @@ function infoVars() {
 
 // pull press links
 function pullPress() {
-  return fetch('contents/press.json').then(function(response) {
+  return fetch('contents/press.json', buildHeader()).then(function(response) {
     return response.json();
   });
 }
@@ -60,7 +73,9 @@ function intro(info) {
   var fulltime = formListString(info.fulltime);
   var intern = formListString(info.intern);
 
-  content.innerHTML = `Hi, my name is Cassidy Williams (if you couldn't figure that out already) and I am a ${info.title} at ${info.company}!
+  console.log(info);
+
+  content.innerHTML = `Hi, my name is Cassidy Williams (if you couldn't figure that out already) and I am a ${info.title} at ${info.company} in ${info.city}!
 
       I started my voyage into coding when I was an 8th grader in the suburbs of Chicago, and I've been loving it ever since. I'm primarily interested in front-end development, but hey, it's always fun to try other things too. You can see my projects on my <a href="http://github.com/cassidoo">GitHub profile</a>.
 
