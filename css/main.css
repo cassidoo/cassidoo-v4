@@ -44,10 +44,6 @@ a {
   color: white;
 }
 
-a:hover {
-  text-decoration: overline;
-}
-
 .container {
   background: linear-gradient(316deg, #ffdf79, #ed747f, #e371d4, #8d5993, #9771e3);
   background-size: 600% 600%;
