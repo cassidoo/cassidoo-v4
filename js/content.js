@@ -1,3 +1,4 @@
+// build headers for requests
 function buildHeader() {
   var head = new Headers();
   head.append('pragma', 'no-cache');

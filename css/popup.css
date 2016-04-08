@@ -31,19 +31,21 @@
 .blur .content svg:hover {
   cursor: pointer;
 
-  -webkit-animation: spin .5s ease-in;
-  -moz-animation: spin .5s ease-in;
-  animation: spin .5s ease-in;
+  -webkit-animation: spin .5s linear;
+  -moz-animation: spin .5s linear;
+  animation: spin .5s linear;
 }
 
-.blur .content .about {
+.about {
   height: 70%;
   padding: 0 15px 0 0;
   overflow-y: auto;
 }
 
-.blur .content .about:hover {
-  cursor: ns-resize;
+.about.shrink {
+  -webkit-animation: shrink .5s ease-out;
+  -moz-animation: shrink .5s ease-out;
+  animation: shrink .5s ease-out;
 }
 
 .blur .header {
@@ -91,14 +93,27 @@
 }
 
 /* animations */
+@-moz-keyframes shrink {
+  0% {height: 70%; opacity: 1;}
+  100% {height: 0; opacity: 0;}
+}
+@-webkit-keyframes shrink {
+  0% {height: 70%; opacity: 1;}
+  100% {height: 0; opacity: 0;}
+}
+@keyframes shrink {
+  0% {height: 70%; opacity: 1;}
+  100% {height: 0; opacity: 0;}
+}
+
 @-moz-keyframes spin {
-  100% {-moz-transform: rotate(180deg); transform:rotate(180deg);}
+  100% {-moz-transform: rotate(90deg); transform:rotate(90deg);}
 }
 @-webkit-keyframes spin {
-  100% {-webkit-transform: rotate(180deg); transform:rotate(180deg);}
+  100% {-webkit-transform: rotate(90deg); transform:rotate(90deg);}
 }
 @keyframes spin {
-  100% {transform:rotate(180deg);}
+  100% {transform:rotate(90deg);}
 }
 
 @-webkit-keyframes fadeInFromNone {
@@ -116,25 +131,3 @@
   1% {display: block; opacity: 0;}
   100% {display: block;opacity: 1;}
 }
-
-/*
--webkit-animation: fadeOutFromBlock 1s ease-out;
--moz-animation: fadeOutFromBlock 1s ease-out;
-animation: fadeOutFromBlock 1s ease-out;
-
-@-webkit-keyframes fadeOutFromBlock {
-  0% {display: block; opacity: 1;}
-  99% {display: block; opacity: 0;}
-  100% {display: none; opacity: 0;}
-}
-@-moz-keyframes fadeOutFromBlock {
-  0% {display: block; opacity: 1;}
-  99% {display: block; opacity: 0;}
-  100% {display: none; opacity: 0;}
-}
-@keyframes fadeOutFromBlock {
-  0% {display: block; opacity: 1;}
-  99% {display: block; opacity: 0;}
-  100% {display: none; opacity: 0;}
-}
-*/
