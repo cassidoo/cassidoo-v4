@@ -40,6 +40,7 @@
   height: 70%;
   padding: 0 15px 0 0;
   overflow-y: auto;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
 .about a:hover {
