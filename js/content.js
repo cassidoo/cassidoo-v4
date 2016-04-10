@@ -51,7 +51,7 @@ function pressVars() {
   var recent = [];
 
   pullPress().then(function(r) {
-    for(var i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
       recent[i] = r.data[i];
     }
   })

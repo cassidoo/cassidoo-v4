@@ -1,6 +1,6 @@
 function popupToggle() {
   [].forEach.call(document.getElementsByClassName('container'), function(x) {
-    if(!x.classList.contains('blur')) {
+    if (!x.classList.contains('blur')) {
       generateContent();
     }
     x.classList.toggle('blur');
@@ -8,9 +8,10 @@ function popupToggle() {
 }
 
 function closePopup() {
-  document.getElementById('about').classList.toggle('shrink');
+  var aboutClass = document.getElementById('about').classList;
+  aboutClass.toggle('shrink');
   window.setTimeout(function() {
-    document.getElementById('about').classList.toggle('shrink');
+    aboutClass.toggle('shrink');
     popupToggle();
   }, 500);
 }
