@@ -86,7 +86,7 @@ function intro(info) {
 
       In addition to ${info.hobbies[Math.floor(Math.random()*info.hobbies.length)]}, one of my favorite things to do is help people be successful, whether it means mentoring them at a hackathon, editing their resume, or giving a talk. Check out my <a href="http://github.com/cassidoo/getting-a-gig">Getting a Gig</a> guide or my <a href="http://cassidoo.github.io">blog</a> to learn more about that. If you want. You don't have to. I'm not your mother.
 
-      If you have any questions about me or you just want to send me a joke, take a look at any of my profiles listed on this site.
+      If you have any questions about me or you just want to send me a joke, take a look at any of my profiles listed on this site. If you want Clarifai to sponsor an event of yours, please <a href="hackers@clarifai.com">email me at work</a>.
       Thanks for reading this far. In exchange for your seemingly undying loyalty, here is a joke: Why are mountains so funny? Because they're hill areas.`;
 }
 
